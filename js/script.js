@@ -3,9 +3,9 @@ let MainBody = document.querySelector('body');
 const button = document.getElementById('btn');
 const moonDiv = document.getElementById('moon-icon');
 const sunDiv = document.getElementById('sun-icon');
-
 const moonIcon = document.getElementById('moon');
 const sunIcon = document.getElementById('sun');
+const Menu = document.getElementsByClassName('menu')
 
 // Check the stored theme mode on page load
 let themeMode = localStorage.getItem('themeMode');
@@ -29,6 +29,8 @@ moonIcon.addEventListener('click' , () => {
         localStorage.setItem('themeMode' , 'dark');
         MainBody.style.backgroundColor ='#1a202c';
         MainBody.style.color = 'white';
+        Menu.classList.add('dark-menu-btn');
+        Menu.classList.remove('dark-menu-btn');
         moonDiv.style.visibility = 'hidden';
         sunDiv.style.visibility = 'visible';
     
@@ -42,6 +44,12 @@ sunIcon.addEventListener('click' , () => {
         moonDiv.style.visibility = 'visible';
 });
 var typed = new Typed('.auto-typing', {
+    strings: ["Full Stack Developer !" , "Mern Stack Developer !" , "Graphic Designer !" ,"UI UX Designer !" ,"Digital Marketor !"],
+    typeSpeed: 50,
+    backSpeed : 50, 
+    loop : true
+  });
+var typed = new Typed('.auto-typing-2', {
     strings: ["Full Stack Developer !" , "Mern Stack Developer !" , "Graphic Designer !" ,"UI UX Designer !" ,"Digital Marketor !"],
     typeSpeed: 50,
     backSpeed : 50, 
