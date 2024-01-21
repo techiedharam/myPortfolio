@@ -239,7 +239,7 @@ h2 {
     background: none;
 }
 
-/* Tech Stack */
+/* Tech Stack  Section Started*/
 /* #techstack {
 
 } */
@@ -249,14 +249,14 @@ h2 {
     font-size: 40px;
 }
 
-.tech-container {
+.techstack-container {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.tech-container .box {
+.techstack-container .box {
     width: 30%;
     height: 250px;
     padding: 30px 20px;
@@ -264,18 +264,18 @@ h2 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin-top: 40px;
     border-radius: 20px;
-    transition: background-color 0.3s ease;
-
+    transition: background-color 0.5s ease-in-out;
 }
-.tech-container .box:hover {
-    background-color: red;
+.techstack-container .box:hover {
+    background-color: #770842;
+    color: white;
 }
 
-.tech-container .box img {
+.techstack-container .box img {
     width: 100px;
 }
 
-.tech-container .box h3 {
+.techstack-container .box h3 {
         font-size: 30px;
 }   
 
@@ -302,6 +302,12 @@ h2 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 20px;
     margin-top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.skills-container .box:hover {
+    background-color: #770842;
+    color: white;
+    cursor: pointer;
 }
 .skills-container .box img {
     width: 30%;
@@ -385,3 +391,33 @@ h2 {
 /* .swiper-pagination {
     
 } */
+
+
+
+/* Techtools  Section started */
+.techtools-container {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+}
+
+.techtools-container .box {
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(117, 113, 113);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transition: all 0.5s ease-in-out;
+}   
+
+.techtools-container .box:hover {
+    background-color: #770842;
+    color: white;
+}
+
+.techtools-container .box img {
+    width: 40%;
+}
