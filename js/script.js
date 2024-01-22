@@ -1,3 +1,11 @@
+// Responsive Nab Bar 
+/* JavaScript to toggle the mobile menu */
+document.querySelector('.hamburger-icon').addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('active');
+});
+
+
+
 let MainBody = document.querySelector('body');
 const button = document.getElementById('btn');
 const moonDiv = document.getElementById('moon-icon');

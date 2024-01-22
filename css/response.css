@@ -1,39 +1,66 @@
-/* Nav Bar Responsiveness  */
+/* Original CSS */
 
+/* ... (your existing styles) ... */
 
-/* Start Media Queries  */
+/* Responsive CSS */
 
-/* for medium screen  */
-@media (max-width: 799px) {  
-   
-}
-  /* for mobile screen  */  
-  @media (max-width: 477px) {
-    /* .nav-container {
-        width: 80%;
-    } */
-    .nav-container .menu {
-        display: flex;
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    #navbar {
+        height: auto;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-  }
-  
-  /* .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 15px;
-    position: fixed;
-    top: 0;
-    right: -300px;    
-    height: 100vh;
-    width: 300px;
-    background-color: #E3E6F3;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 80px 0 0 10px;
-    transition: 0.3s;
-  } */
+    .nav-container {
+        width: 100%;
+    }
+
+    .nav-container .logo a {
+        margin-bottom: 20px;
+    }
+
+    .nav-container .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: none;
+        position: absolute;
+        width: 100%;
+        background-color: #fff; /* Change to your background color */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        z-index: 1;
+    }
+
+    .nav-container .menu.active {
+        display: flex;
+    }
+
+    .nav-container .menu .menu-btn {
+        margin: 10px 0;
+    }
+
+    .nav-container .hamburger-icon {
+        display: block;
+    }
+
+    .darkLightMode {
+        display: none;
+    }
+
+    .scroll-up-btn {
+        left: 90%;
+    }
+}
+
+/* Additional styles for better mobile experience (optional) */
+body {
+    margin: 0;
+}
+
+body .menu-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
