@@ -1,36 +1,27 @@
-/* Original CSS */
 
-/* ... (your existing styles) ... */
-
-/* Responsive CSS */
-
-@media only screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
-
+/* Responsive CSS for Small Screens (up to 477px) */
+@media screen and (max-width: 477px) {
     #navbar {
-        height: auto;
+        width: 45%;
+    }
+    .nav-container {
+        width: 50%;
         flex-direction: column;
         align-items: center;
-    }
-
-    .nav-container {
-        width: 100%;
-    }
-
-    .nav-container .logo a {
-        margin-bottom: 20px;
+        
     }
 
     .nav-container .menu {
         flex-direction: column;
-        align-items: center;
         text-align: center;
         display: none;
         position: absolute;
+        top: 70px;
+        left: 0%;
         width: 100%;
-        background-color: #fff; /* Change to your background color */
+        background-color: #fff;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        z-index: 1;
+        padding: 20px 0;
     }
 
     .nav-container .menu.active {
@@ -38,29 +29,30 @@
     }
 
     .nav-container .menu .menu-btn {
-        margin: 10px 0;
+        /* Add styles for small screens */
     }
 
     .nav-container .hamburger-icon {
-        display: block;
+        position: absolute;
+        left: 80%;
+        top: 35%;  
+        color: black;      
     }
-
-    .darkLightMode {
-        display: none;
-    }
-
-    .scroll-up-btn {
-        left: 90%;
+     .darkLightMode {
+        position: absolute;
+        left: 86%;
+        top: 30%;
     }
 }
 
-/* Additional styles for better mobile experience (optional) */
-body {
-    margin: 0;
+/* Responsive CSS for Medium Screens (478px to 768px) */
+@media screen and (min-width: 478px) and (max-width: 768px) {
+    .nav-container .menu .menu-btn {
+        /* Adjust styles as needed for medium screens */
+    }
 }
 
-body .menu-btn {
-    padding: 10px 15px;
-    border-radius: 5px;
+/* Responsive CSS for Large Screens (769px to 1200px) */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    /* Adjust styles as needed for large screens */
 }
-
