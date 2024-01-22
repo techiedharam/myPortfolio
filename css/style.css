@@ -192,22 +192,22 @@ h2 {
     color: #fff;
 }
 .home .text-content .social-icon ul li:nth-child(1) a:hover{
-    background-color: red;
+    background-color: #0077b5;
 }
 .home .text-content .social-icon ul li:nth-child(2) a:hover{
-    background-color: red;
+    background-color: #333;
 }
 .home .text-content .social-icon ul li:nth-child(3) a:hover{
-    background-color: red;
+    background-color: #c71610;
 }
 .home .text-content .social-icon ul li:nth-child(4) a:hover{
-    background-color: red;
+    background-color: #00FF00;
 }
 .home .text-content .social-icon ul li:nth-child(5) a:hover{
-    background-color: red;
+    background-color: #d3426f;
 }
 .home .text-content .social-icon ul li:nth-child(6) a:hover{
-    background-color: red;
+    background-color: #b56424;
 }
 .home .text-content .social-icon i{
     font-size: 30px;
@@ -239,6 +239,11 @@ h2 {
 }
 .home-container .img-content img {
     width: 100%;
+    transition: all .5s ease-in-out;
+}
+.home-container .img-content img:hover {
+    transform: translate(5% , -10%);
+    cursor: pointer;
 }
 
 
