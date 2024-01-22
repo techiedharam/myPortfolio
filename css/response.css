@@ -1,0 +1,39 @@
+/* Nav Bar Responsiveness  */
+
+
+/* Start Media Queries  */
+
+/* for medium screen  */
+@media (max-width: 799px) {  
+   
+}
+  /* for mobile screen  */  
+  @media (max-width: 477px) {
+    /* .nav-container {
+        width: 80%;
+    } */
+    .nav-container .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+  
+  /* .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    right: -300px;    
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  } */
