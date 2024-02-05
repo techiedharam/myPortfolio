@@ -1,9 +1,11 @@
 // Responsive Nab Bar 
 /* JavaScript to toggle the mobile menu */
 document.querySelector('.hamburger-icon').addEventListener('click', function() {
-    document.querySelector('.menu').classList.toggle('active');
+    document.querySelector('.menu-list').classList.add('active');
 });
-
+document.querySelector('.cross-icon').addEventListener('click', function() {
+    document.querySelector('.menu-list').classList.remove('active');
+});
 
 
 let MainBody = document.querySelector('body');
