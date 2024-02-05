@@ -1,6 +1,8 @@
 
-/* Responsive CSS for Small Screens (up to 477px) */
+/* Responsive CSS for medium Screens (up to 768px) */
 @media screen and (max-width: 768px) {
+
+    /* Responsive Nav bar  */
     .nav-container .hamburger-icon {
         display: block;
     }
@@ -28,7 +30,7 @@
         transition: all 0.8s;
     }
     .nav-container .menu-list ul{
-        height: 90vh;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -42,7 +44,105 @@
         left: 0;
     }
 
+    /* Responsive Home Section */
+    /* Text content */
+    .home-container {
+       width: 100%;
+       justify-content: space-between;
+    }
+    .home-container .text-content {
+        width: 60%;
+        margin-top: 10%;
+    }
+    
+    .text-content .text-1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .text-content .text-2 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    .text-content .text-3 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .text-content .text-3 span {
+        color: red;
+    }
+
+
+    /* Imgage Content  */
+    .home-container .img-content img {
+        width: 100%;
+        transition: all .5s ease-in-out;
+    }
+    .home-container .img-content img:hover {
+        transform: translate(5% , -10%);
+        cursor: pointer;
+    }
+
 }
+
+/* Responsive CSS for small Screens (upto 478) */
+@media screen and (max-width: 478px) {
+           /* Responsive Home Section */
+    /* Text content */
+    .home-container {
+        justify-content: space-between;
+     }
+     .home-container .text-content {
+         width: 100%;
+         margin-top: 20%;
+     }
+     
+     .text-content .text-1 {
+         font-size: 25px;
+         font-weight: 400;
+     }
+     .text-content .text-2 {
+         font-size: 55px;
+         font-weight: 700;
+     }
+     .text-content .text-3 {
+         font-size: 35px;
+         font-weight: 500;
+     }
+     .text-content .text-3 span {
+         color: red;
+     }
+ 
+     .home .text-content .social-icon {
+        margin-top: 100px;
+        margin-right: 50px;
+    }
+
+    .home .text-content .social-icon ul li a{
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        text-align: center;
+        transition: 0.6s;
+    }
+    home .text-content .social-icon ul li a i {
+        font-size: 5px;
+    }
+
+     /* Imgage Content  */
+     .home-container .img-content img {
+         display: none;
+     }
+     .home-container .img-content img:hover {
+         transform: translate(5% , -10%);
+         cursor: pointer;
+     }
+}
+
+
+
 
 /* Responsive CSS for Medium Screens (478px to 768px) */
 /* @media screen and (min-width: 478px) and (max-width: 768px) {
