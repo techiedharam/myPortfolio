@@ -131,10 +131,6 @@
      .home-container .img-content img {
          display: none;
      }
-     .home-container .img-content img:hover {
-         transform: translate(5% , -10%);
-         cursor: pointer;
-     }
 }
 
 
