@@ -54,7 +54,7 @@
     }
     .home-container .text-content {
         width: 60%;
-        margin-top: 3%;
+        margin-top: 5%;
     }
     
     .text-content .text-1 {
@@ -72,7 +72,6 @@
     .text-content .text-3 span {
         color: red;
     }
-
 
     /* Imgage Content  */
     .home-container .img-content img {
