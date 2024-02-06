@@ -8,7 +8,7 @@ document.querySelector('.cross-icon').addEventListener('click', function() {
 });
 
 
-let MainBody = document.querySelector('body');
+const MainBody = document.querySelector('body');
 const button = document.getElementById('btn');
 const moonDiv = document.getElementById('moon-icon');
 const sunDiv = document.getElementById('sun-icon');

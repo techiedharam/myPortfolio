@@ -1,6 +1,6 @@
 
 /* Responsive CSS for medium Screens (up to 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 799px) {
 
     /* Responsive Nav bar  */
     .nav-container .hamburger-icon {
@@ -9,6 +9,7 @@
     .nav-container .cross-icon {
         display: block;
         font-size: 30px;
+        color: white;
      }
     /* #navbar {
      
@@ -24,7 +25,7 @@
         position: fixed;
         top: 0;
         left: 100%;
-        background-color: #333333;
+        background-color: #1a202c;
         z-index: 999;
         opacity: 1;
         transition: all 0.8s;
@@ -36,8 +37,9 @@
         justify-content: center;
         gap: 40px;
     }
-    .nav-container .menu-list ul a{
-       font-size: 20px;
+    .nav-container .menu-list ul li a{
+       font-size: 25px;
+       color: #fff;
     }
 
     .nav-container .menu-list.active {
@@ -74,18 +76,13 @@
 
     /* Imgage Content  */
     .home-container .img-content img {
-        width: 100%;
-        transition: all .5s ease-in-out;
-    }
-    .home-container .img-content img:hover {
-        transform: translate(5% , -10%);
-        cursor: pointer;
+        display: none;
     }
 
 }
 
-/* Responsive CSS for small Screens (upto 478) */
-@media screen and (max-width: 478px) {
+/* Responsive CSS for small Screens (upto 477) */
+@media screen and (max-width: 477px) {
            /* Responsive Home Section */
     /* Text content */
     .home-container {

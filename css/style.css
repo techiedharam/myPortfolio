@@ -10,6 +10,7 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 /* all similar content styling codes */
@@ -127,8 +128,8 @@ h2 {
     width: 30px;
     height: 30px;
     position: absolute;
-    left: 95%;
-    top: 18px;
+    left: 92%;
+    top: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
