@@ -1,10 +1,17 @@
-// Responsive Nab Bar 
-/* JavaScript to toggle the mobile menu */
+// JavaScript to toggle the mobile menu
 document.querySelector('.hamburger-icon').addEventListener('click', function() {
-    document.querySelector('.menu-list').classList.add('active');
+  document.querySelector('.menu-list').classList.add('active');
 });
+
 document.querySelector('.cross-icon').addEventListener('click', function() {
-    document.querySelector('.menu-list').classList.remove('active');
+  document.querySelector('.menu-list').classList.remove('active');
+});
+
+// Add a listener for each link inside the menu to close the menu when clicked
+document.querySelectorAll('.menu-list ul li a').forEach(function(link) {
+  link.addEventListener('click', function() {
+      document.querySelector('.menu-list').classList.remove('active');
+  });
 });
 
 
