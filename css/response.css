@@ -163,6 +163,12 @@
 
 /* Responsive CSS for small Screens (upto 477) */
 @media screen and (max-width: 477px) {
+    /* Responsive Nav bar  */
+    section{
+        padding: 20px 10%;
+    }
+
+
            /* Responsive Home Section */
     /* Text content */
     .home-container {
@@ -212,6 +218,38 @@
      .home-container .img-content img {
          display: none;
      }
+
+     /* Tech Stack Responsive  */
+     .techstack-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .techstack-container .box {
+        width: 80%;
+        height: 200px;
+        border-radius: 20px;
+       
+    }
+
+    /* skill rresponsive  */
+
+     .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+
+/* Tech Tools Overview  Responsive css  */
+    .techtools-container {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 10px;
+    }
+    
 }
 
 
