@@ -94,6 +94,20 @@
         margin-top: 10px;
         text-align: center;
     }
+
+    .about-content .left {
+        width: 80%;
+    }
+    .about-content .left img{
+        width: 80%;
+    }
+
+    .about-content .right {
+        width: 80%;
+        font-size: 18px;
+    }
+
+
     
  /* ====================== Sill overview  Section for Medium Device ==================== */
 
