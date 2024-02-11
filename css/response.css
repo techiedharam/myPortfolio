@@ -87,11 +87,12 @@
         display: none;
     }
 
-    /*================= About Section Responsive css ================= */
+/*================= About Section Responsive css ================= */
    
     .about-content {
         flex-direction: column;
         margin-top: 10px;
+        text-align: center;
     }
     
  /* ====================== Sill overview  Section for Medium Device ==================== */
