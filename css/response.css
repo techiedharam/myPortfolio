@@ -1,5 +1,5 @@
 
-/* Responsive CSS for medium Screens (up to 768px) */
+/* ============== Responsive CSS for medium Screens (up to 768px) ================*/
 @media screen and (max-width: 799px) {
 
     /* section {
@@ -11,7 +11,7 @@
     }
 
 
-    /* Responsive Nav bar  */
+    /* ================= Responsive Nav bar =============== */
     .nav-container .hamburger-icon {
         display: block;
     }
@@ -55,7 +55,7 @@
         left: 0;
     }
 
-    /* Responsive Home Section */
+ /* ====================== Home Section Responsive for Medium Device ==================== */
     /* Text content */
     .home-container {
        width: 100%;
@@ -87,67 +87,42 @@
         display: none;
     }
 
-    /* About Section  */
-    .about-content .left {
-        width: 40%;
-    }
-    .about-content .left img {
-        width: 70%;
-        border-radius: 100%;
-        padding: 3px;
-        background: red;
+    /*================= About Section Responsive css ================= */
+   
+    .about-content {
+        flex-direction: column;
+        margin-top: 10px;
     }
     
-    .about-content .right {
-        width: 60%;
-        font-size: 12px;
-    }
-    .about-content .right .text {
-        font-size: 15px;
-        font-weight: 700;
-    }
-    .about-content .right span {
-        color: red;
-    }
-    .about .about-content .right p{
-        margin-top: 10pxs;
-        text-align: justify;
-    }
-    
-    .about .about-content .right a{
-        padding: 5px 10px;
-        
-    }
-    
-    /* Tech Stack  Section Started*/
+ /* ====================== Sill overview  Section for Medium Device ==================== */
 
-#techstack h1 {
+#skills h1 {
     font-size: 10px;
 }
 
-.techstack-container {
+.skills-container {
     gap: 20px;
 }
 
-.techstack-container .box {
+.skills-container .box {
     width: 35%;
     height: 200px;
     padding: 20px 5px;
 }
 
-.techstack-container .box img {
+.skills-container .box img {
     width: 80px;
 }
 
-.techstack-container .box h3 {
+.skills-container .box h3 {
         font-size: 20px;
 }   
-.techstack-container .box p {
+.skills-container .box p {
         font-size: 15px;
 }   
 
-    /* skill section responsive  */
-    .skills-container {
+ /* ====================== Techstack  Section for Medium Device ==================== */
+    .techstack-container {
         grid-template-columns: repeat(3, 1fr);
         text-align: center;
         justify-content: center;
@@ -156,7 +131,10 @@
         padding: 0 50px;
     }
 
-    /* Tech tools responsive  */
+ /* ====================== Project Section Responsive  for Medium Device ==================== */
+
+
+ /* ====================== Tech tools Section for Medium Device ==================== */
     .techtools-container {
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
@@ -164,13 +142,16 @@
     }
 }
 
-/* Responsive CSS for small Screens (upto 477) */
+
+
+
+/* ======= Responsive CSS for small Screens (upto 477) ======== */
 @media screen and (max-width: 477px) {
-    /* Responsive Nav bar  */
+/* ====================== Nvabar  for Small Device ==================== */
     section{
         padding: 50px 10%;
     }
-           /* Responsive Home Section */
+ /* ====================== Home Section for Small Device ==================== */
     /* Text content */
     .home-container {
         justify-content: space-between;
@@ -220,23 +201,38 @@
          display: none;
      }
 
-     /* Tech Stack Responsive  */
-     .techstack-container {
+ /* ====================== About Section for Small Device ==================== */
+ .about-content {
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.about-content .right {
+    font-size: 12px;
+}
+
+.about-content .right .text {
+    font-size: 18px;
+   
+}
+
+ /* ====================== Skill overview Section for Small Device ==================== */
+     .skills-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .techstack-container .box {
+    .skills-container .box {
         width: 80%;
         height: 200px;
         border-radius: 20px;
        
     }
 
-    /* skill rresponsive  */
+/* ====================== Techstack  Section for Small Device ==================== */
 
-     .skills-container {
+     .techstack-container {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         text-align: center;
@@ -244,7 +240,7 @@
     }
 
 
-/* Tech Tools Overview  Responsive css  */
+ /* ====================== Home Section for Small Device ==================== */
     .techtools-container {
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
@@ -252,16 +248,3 @@
     }  
     
 }
-
-
-
-
-/* Responsive CSS for Medium Screens (478px to 768px) */
-/* @media screen and (min-width: 478px) and (max-width: 768px) {
-    
-} */
-
-/* Responsive CSS for Large Screens (769px to 1200px) */
-/* @media screen and (min-width: 769px) and (max-width: 1200px) {
-    
-} */
