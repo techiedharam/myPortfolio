@@ -10,6 +10,21 @@
         font-size: 30px;
     }
 
+/* ======== Responsive Scroll CSS ==========*/
+    .scroll-up-btn {
+        top: 90%;
+        left: 94%;
+    }
+    .scroll-up-btn i {
+        font-size: 30px;
+        background-color: red;
+        border-radius: 100%;
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+    }
+    
+
 
     /* ================= Responsive Nav bar =============== */
     .nav-container .hamburger-icon {
@@ -104,7 +119,7 @@
 
     .about-content .right {
         width: 80%;
-        font-size: 18px;
+        font-size: 20px;
     }
 
 
@@ -172,6 +187,18 @@
     section{
         padding: 50px 5%;
     }
+
+/* ======== Responsive Scroll CSS ==========*/
+    .scroll-up-btn {
+        left: 80%;
+    }
+    .scroll-up-btn i {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+
+
  /* ====================== Home Section for Small Device ==================== */
     /* Text content */
     .home-container {
@@ -184,15 +211,12 @@
      
      .text-content .text-1 {
          font-size: 25px;
-         font-weight: 400;
      }
      .text-content .text-2 {
-         font-size: 55px;
-         font-weight: 700;
+         font-size: 50px;
      }
      .text-content .text-3 {
-         font-size: 35px;
-         font-weight: 500;
+         font-size: 30px;
      }
      .text-content .text-3 span {
          color: red;
@@ -222,6 +246,13 @@
          display: none;
      }
 
+
+     
+.home .text-content > a {
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
  /* ====================== About Section for Small Device ==================== */
  .about-content {
     flex-direction: column;
@@ -229,13 +260,18 @@
 }
 
 .about-content .right {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .about-content .right .text {
-    font-size: 18px;
+    font-size: 20px;
    
 }
+
+.about .about-content .right a{
+    padding: 10px 30px;
+}
+
 
  /* ====================== Skill overview Section for Small Device ==================== */
      .skills-container {
