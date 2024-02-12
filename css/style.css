@@ -203,7 +203,7 @@ h2 {
     margin: 0 5px;
 }
 .home .text-content .social-icon ul li a{
-    display: block;
+    display: block;  
     width: 55px;
     height: 55px;
     border-radius: 50%;
